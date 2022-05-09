@@ -5,6 +5,7 @@
     <title>Factoria F6</title>
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -45,7 +46,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarsExample10">
                         <ul class="navbar-nav">
                             <li class="nav-item active" id="heading-right">
-                                <a class="nav-link" th:href="@{/index}"><h1>FACTORIA</h1></a>
+                                <a class="nav-link" th:href="@{/index}"><h1 class="nombredeempresa">FACTORIA</h1></a>
                             </li>
                         </ul>
                     </div>
@@ -71,23 +72,27 @@
     </div>
 
 
-<div class="container">
-
-</div>
-
-<footer th:fragment="footer" class="bg-dark text-center text-white fixed-bottom">
+<footer th:fragment="footer" class="bg-dark text-center text-white">
 
     <div class="container">
-        <p>Copyright Factoria F6</p>
+        <h4>Follow Us</h4>
+        <ul class="social-network social-circle">
+            <li><a href="https://es-es.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://es.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    </div>
+
+
+    <div class="container">
+        <p> © Factoria F6. All rights reserved.</p>
 
     </div>
+
 
     <script type="text/javascript" th:src="@{/js/jquery.slim.min.js}"></script>
     <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
     <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
-
-
-
 
 </footer>
 
