@@ -1,10 +1,11 @@
 package com.example.TechEvents.models.entity;
 
-import com.sun.istack.NotNull;
-
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 
 @Entity
@@ -13,14 +14,22 @@ public class Usuario implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @NotEmpty
     private String nombre;
-
+    @NotEmpty
+    @Email
     private String email;
-
-
+    @NotEmpty
     private String password;
-    
+
+
+/*    @ManyToMany(mappedBy = "usuarios")
+
+    *//*@JoinTable(name = "usuarios_eventos",
+            joinColumns ={@JoinColumn(name="usuarios_id")},
+            inverseJoinColumns = {@JoinColumn(name="eventos_id")})*//*
+    private List<Evento> eventos = new ArrayList<Evento>() ;*/
+
 
     public Usuario() {
     }

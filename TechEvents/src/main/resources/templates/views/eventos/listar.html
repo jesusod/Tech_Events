@@ -13,7 +13,8 @@
 <div class="container">
 
     <a class="btn btn-primary btn-sm" th:href="@{/views/eventos/create}"
-    th:text="'Nuevo Evento'" title="Crear Nuevo Evento">
+       th:text="'Nuevo Evento'" title="Crear Nuevo Evento">
+
     </a>
 
     <table class="table">
@@ -40,15 +41,14 @@
             <td>
                 <a class="btn btn-success btn-sm" th:href="@{/views/eventos/edit/} + ${ev.id}"
                    th:text="'Editar'" title="Editar Evento">
+
                 </a>
             </td>
-
             <td>
                 <a class="btn btn-danger btn-sm" th:href="@{/views/eventos/delete/} + ${ev.id}"
                    th:text="'Eliminar'" title="Eliminar Evento"
-                    onclick="return confirm('¿Estas seguro de que quieres eliminar el evento?')">
-                </a>
-
+                onclick="return confirm('Esta seguro de eliminar el evento?');">
+                 </a>
             </td>
         </tr>
 

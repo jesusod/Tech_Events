@@ -11,4 +11,6 @@ public interface IEventoService {
     public void guardar(Evento evento);
     public Evento buscarporId(Long id);
     public void eliminar(Long id);
+
+
 }

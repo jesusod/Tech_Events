@@ -6,8 +6,10 @@ import java.util.List;
 
 public interface IUsuarioService {
 
+
     public List<Usuario> listarTodos();
     public void guardar(Usuario usuario);
     public Usuario buscarporId(Long id);
     public void eliminar(Long id);
+
 }

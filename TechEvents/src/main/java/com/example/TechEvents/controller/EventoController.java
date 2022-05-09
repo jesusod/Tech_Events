@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/views/eventos")
+@RequestMapping("views/eventos/")
 public class EventoController {
 
     @Autowired
@@ -20,9 +20,12 @@ public class EventoController {
 
     @GetMapping("/")
     public String listarEventos(Model model){
+
         List<Evento> listadoEventos = eventoService.listarTodos();
+
         model.addAttribute("titulo", "Lista de Eventos");
         model.addAttribute("eventos", listadoEventos);
+
         return "views/eventos/listar";
     }
 
@@ -30,9 +33,9 @@ public class EventoController {
     public String crear(Model model){
 
         Evento evento = new Evento();
+
         model.addAttribute("titulo", "Formulario: Nuevo Evento");
         model.addAttribute("evento", evento);
-
 
         return "views/eventos/frmCrear";
     }
@@ -44,11 +47,11 @@ public class EventoController {
         System.out.println("Evento guardado con exito!");
         return "redirect:/views/eventos/";
     }
-
     @GetMapping("/edit/{id}")
-    public String editar(@PathVariable("id") Long idEvento, Model model){
+    public String editar (@PathVariable("id") Long idEvento, Model model){
 
         Evento evento = eventoService.buscarporId(idEvento);
+
         model.addAttribute("titulo", "Formulario: Editar Evento");
         model.addAttribute("evento", evento);
 
@@ -57,10 +60,9 @@ public class EventoController {
     @GetMapping("/delete/{id}")
     public String eliminar(@PathVariable("id") Long idEvento){
 
-       eventoService.eliminar(idEvento);
-        System.out.println("El evento se ha eliminado correctamente");
+        eventoService.eliminar(idEvento);
+        System.out.println("Evento eliminado con exito");
 
         return "redirect:/views/eventos/";
     }
-
 }

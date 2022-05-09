@@ -1,7 +1,5 @@
 package com.example.TechEvents.models.entity;
 
-import com.sun.istack.NotNull;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -16,17 +14,11 @@ public class Evento implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String titulo;
-
     private String descripcion;
-
     private String user_max;
-
     private String fecha_hora;
-
     private String img;
-
 
  /*   @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 

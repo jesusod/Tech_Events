@@ -13,7 +13,7 @@
 <div class="container">
 
     <a class="btn btn-primary btn-sm" th:href="@{/views/usuarios/create}"
-       th:text="'Nuevo Usuario'" title="Crear Nuevo Usuario">
+        th:text="'Nuevo Usuario'" title="Crear Nuevo Usuario">
 
     </a>
 
@@ -36,16 +36,15 @@
             <td th:text="${us.password}"></td>
             <td>
                 <a class="btn btn-success btn-sm" th:href="@{/views/usuarios/edit/} + ${us.id}"
-                   th:text="'Editar'" title="Editar Evento">
+                   th:text="'Editar'" title="Editar Usuario">
+
                 </a>
             </td>
-
             <td>
                 <a class="btn btn-danger btn-sm" th:href="@{/views/usuarios/delete/} + ${us.id}"
-                   th:text="'Eliminar'" title="Eliminar Evento"
-                   onclick="return confirm('¿Estas seguro de que quieres eliminar el usuario?')">
+                   th:text="'Eliminar'" title="Eliminar Usuario"
+                   onclick="return confirm('¿Esta seguro de eliminar el usuario?');">
                 </a>
-
             </td>
         </tr>
 

@@ -17,21 +17,28 @@ public class EventoServiceImpl implements IEventoService{
 
     @Override
     public List<Evento> listarTodos() {
+
         return (List<Evento>) eventoRepository.findAll();
     }
 
     @Override
     public void guardar(Evento evento) {
+
         eventoRepository.save(evento);
     }
 
     @Override
     public Evento buscarporId(Long id) {
+
         return eventoRepository.findById(id).orElse(null);
     }
 
     @Override
     public void eliminar(Long id) {
+
         eventoRepository.deleteById(id);
     }
+
+
+
 }
