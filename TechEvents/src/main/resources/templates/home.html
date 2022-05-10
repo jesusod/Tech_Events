@@ -51,20 +51,20 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" >
         <div class="abs-center">
             <div class="row">
                 <div class="col">
-                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" th:each="ev:${eventos}">
                         <div class="col p-4 d-flex flex-column position-static post">
-                            <strong class="d-inline-block mb-2 text-primary">World</strong>
-                            <h3 class="mb-0">Master en CSS</h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link">Continue reading</a>
+                            <!--<strong class="d-inline-block mb-2 text-primary">World</strong>-->
+                            <h3 class="mb-2" th:text="${ev.titulo}"></h3>
+                            <p class="mb-2" th:text="${ev.fecha_hora}"></p>
+                            <p class="card-text mb-auto" th:text="${ev.descripcion}"></p>
+                            <p  class="stretched-link" th:text="${ev.user_max}"></p>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img"  src="img/master-css.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                        <div>
+                            <img class="bd-placeholder-img"  th:src="@{${ev.img}}" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
                         </div>
                     </div>
                 </div>
@@ -78,14 +78,14 @@
                 <div class="col">
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static post">
-                            <strong class="d-inline-block mb-2 text-primary">World</strong>
+                            <!--<strong class="d-inline-block mb-2 text-primary">World</strong>-->
                             <h3 class="mb-0">Master de JAVA</h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="mb-1 text-muted">Nov 12</p>
                             <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link">Continue reading</a>
+                            <p href="#" class="stretched-link">Continue reading</p>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img"  src="img/master-css.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                        <div>
+                            <img class="bd-placeholder-img"  src="https://escuela.it/storage/course_images/imagen-curso-html-css-50.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
                         </div>
                     </div>
                 </div>
@@ -117,8 +117,12 @@
 
 
 
-
 </main>
+
+<script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
 <footer th:replace="plantilla/template :: footer"></footer>
 </body>
