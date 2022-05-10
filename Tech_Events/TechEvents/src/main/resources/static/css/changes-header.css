@@ -1,3 +1,8 @@
+.logo-f {
+    margin-top: 10px;
+    margin-bottom: 10px;
+width: 15%;}
+
 .navbar-expand-lg {
     width: 98% !important;
     height: 100px !important;
@@ -29,4 +34,9 @@ background-color: transparent;
     margin-bottom: 10px;}
 
 .nav-link{text-align: right !important;}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
 
