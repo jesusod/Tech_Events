@@ -1,0 +1,32 @@
+.navbar-expand-lg {
+    width: 98% !important;
+    height: 100px !important;
+}
+.tarjeta{
+background-color: transparent;
+}
+
+.bg-dark, .container-h, .container-h2 {
+    background-color: #005555 !important;
+}
+
+
+.container-h2{
+    margin: 30px;
+    }
+
+.row-h-btn{
+    display: flex;
+    justify-content: space-around !important;
+    margin: 10px;
+
+
+.btn-warning {
+    background-color: #F7FF93 !important;}
+
+.logo-f {
+    margin-top: 10px;
+    margin-bottom: 10px;}
+
+.nav-link{text-align: right !important;}
+

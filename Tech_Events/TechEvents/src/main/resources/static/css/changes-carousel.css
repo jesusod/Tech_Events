@@ -1,0 +1,13 @@
+body {    background-color: #005555 !important;
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.post{
+    background-color: #069A8E;
+    color: white;
+}
