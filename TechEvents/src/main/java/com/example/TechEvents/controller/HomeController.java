@@ -21,6 +21,11 @@ public class HomeController {
         model.addAttribute("titulo", "Lista de Eventos");
         model.addAttribute("eventos", listadoEventos);
 
+        List<Evento> eventSlider = eventoService.listarTodos();
+        model.addAttribute("titulo", "Lista de Eventos");
+        model.addAttribute("slider", eventSlider);
+
+
 
         return "home";
     }
