@@ -9,7 +9,10 @@ body{
     height: 100px !important;
 }
 
+.tituloenslider{
 
+    font-size: 35px;
+}
 .tarjeta{
     background-color: transparent;
 }
@@ -34,6 +37,11 @@ body{
 
 .btn-warning {
     background-color: #F7FF93 !important;}
+
+.btn-secondary {
+    background-color: #F7FF93 !important;
+    padding: 40px;}
+
 
 .logo-f {
     margin-top: 10px;

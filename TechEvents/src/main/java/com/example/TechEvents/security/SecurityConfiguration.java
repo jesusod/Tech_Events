@@ -21,26 +21,26 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private IUsuarioService iUsuarioService;
 
    /* VIDEO DE MOHAMED*/
- /*   @Autowired
-   UserDetailsService userDetailsService;*/
+    @Autowired
+   UserDetailsService userDetailsService;
 
     @Bean
     public BCryptPasswordEncoder passwordEncoder(){
 
         return new BCryptPasswordEncoder();
     }
-   @Bean
+  /* @Bean
     public DaoAuthenticationProvider authenticationProvider(){
     DaoAuthenticationProvider auth= new DaoAuthenticationProvider();
     auth.setUserDetailsService(iUsuarioService);
     auth.setPasswordEncoder(passwordEncoder());
     return auth;
-    }
+    }*/
 
     @Override
     protected void configure (AuthenticationManagerBuilder auth) throws Exception{
-        auth.authenticationProvider(authenticationProvider());
-        /*auth.userDetailsService(userDetailsService);*/
+        /*auth.authenticationProvider(authenticationProvider());*/
+        auth.userDetailsService(userDetailsService);
 
     }
 
@@ -65,6 +65,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login")
+                /*.successForwardUrl("/user/")*/
+                .defaultSuccessUrl("/user/", true)
                 .permitAll()
                 .and()
                 .logout()

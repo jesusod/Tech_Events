@@ -62,7 +62,7 @@ public class UsuarioServiceImpl implements IUsuarioService {
     }
 
 
-    @Override
+   /* @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Usuario usuario = usuarioRepository.findByEmail(username);
         if (usuario == null) {
@@ -70,10 +70,11 @@ public class UsuarioServiceImpl implements IUsuarioService {
         }
         return new User(usuario.getEmail(),usuario.getPassword(), mapearAutoridadesEventos(usuario.getEventos()));
 
-    }
+    }*/
 
     private Collection<? extends GrantedAuthority> mapearAutoridadesEventos(Collection<Evento> eventos){
         return eventos.stream().map(evento -> new SimpleGrantedAuthority(evento.getTitulo())).collect(Collectors.toList());
     }
+
 
 }

@@ -113,6 +113,22 @@ public class Usuario implements Serializable {
                 '}';
     }
 
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+
 
 
     /*VIDEO MOHAMED

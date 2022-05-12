@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.List;
 
-public interface IUsuarioService extends UserDetailsService {
+public interface IUsuarioService  {
 
     public List<Usuario> listarTodos();
     public void guardar(Usuario usuario);
