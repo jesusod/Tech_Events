@@ -55,7 +55,7 @@ public class EventoController {
         model.addAttribute("titulo", "Formulario: Editar Evento");
         model.addAttribute("evento", evento);
 
-        return "views/eventos/frmCrear";
+        return "eventAdmin";
     }
     @GetMapping("/delete/{id}")
     public String eliminar(@PathVariable("id") Long idEvento){
@@ -63,6 +63,6 @@ public class EventoController {
         eventoService.eliminar(idEvento);
         System.out.println("Evento eliminado con exito");
 
-        return "redirect:/views/eventos/";
+        return "eventAdmin";
     }
 }
