@@ -26,31 +26,6 @@ public class Evento implements Serializable {
 
 
 
-
-/*    @ManyToMany (fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-    @JoinTable(
-            name="usuarios_eventos",
-            joinColumns = @JoinColumn(name="id_usuarios"),
-            inverseJoinColumns = @JoinColumn (name="id_eventos"))
-    private Set<Usuario> usuarios = new HashSet<>();*/
-
-    /*@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "usuarios_eventos",
-            joinColumns = @JoinColumn(
-                    name = "usuario_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(
-                    name = "evento_id", referencedColumnName = "id"))
-    private Collection< Evento > eventos;*/
-
-
-
- /*   @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-
-    @JoinTable(name = "eventos_usuarios",
-            joinColumns ={@JoinColumn(name="eventos_id")},
-            inverseJoinColumns = {@JoinColumn(name="usuarios_id")})
-    private List<Usuario> usuarios = new ArrayList<Usuario>();*/
 @ManyToMany(mappedBy = "eventos")
     private Collection < Usuario > usuarios;
 
@@ -104,9 +79,7 @@ public class Evento implements Serializable {
         this.img = img;
     }
 
-    /*public Evento(String titulo) {
-        this.titulo = titulo;
-    }*/
+
 
     public Collection<Usuario> getUsuarios() {
         return usuarios;

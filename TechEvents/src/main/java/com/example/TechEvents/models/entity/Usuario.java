@@ -23,6 +23,10 @@ public class Usuario implements Serializable {
 
     private String password;
 
+    private boolean active;
+
+    private String roles;
+
 
 
    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
@@ -40,6 +44,8 @@ public class Usuario implements Serializable {
         this.nombre = nombre;
         this.email = email;
         this.password = password;
+        this.active = false;
+        this.roles = "USER";
     }
 
     public Usuario(){
@@ -50,15 +56,9 @@ public class Usuario implements Serializable {
         this.nombre = nombre;
         this.email = email;
         this.password = password;
+        this.active = false;
+        this.roles = "USER";
     }
-
-
-   /*@ManyToMany (fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-    @JoinTable(
-            name="usuarios_eventos",
-            joinColumns = @JoinColumn(name="id_usuarios"),
-            inverseJoinColumns = @JoinColumn (name="id_eventos"))
-            private Set<Evento> eventos = new HashSet<>();*/
 
 
 
@@ -114,4 +114,21 @@ public class Usuario implements Serializable {
     }
 
 
+
+    /*VIDEO MOHAMED
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }*/
 }

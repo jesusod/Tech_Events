@@ -21,21 +21,15 @@
     <div class="container-sm cajacarrusel">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"data-bs-interval="2000" data-bs-pause="false">
             <div class="carousel-inner">
-                <div class="carousel-item" data-bs-interval="3000" th:each="slide: ${slider}"
-                th:classappend="${slideStat.first} ? active : ''">
+                <div class="carousel-item" data-bs-interval="3000" th:each="slide: ${slider}" th:classappend="${slideStat.first} ? active : ''">
                     <img th:src="${slide.img}" width="100%" class="d-block w-100" alt="...">
+                <!--</div>-->
+                    <div class="carousel-caption">
+                        <!--<h1 >TOP EVENTS</h1>-->
+                        <p th:text="${slide.titulo}" class="h1-carousel edit1 mb-5 caption-top"></p>
+                        <p th:text="${slide.fecha_hora}" class="h1-carousel mb-5 caption-bottom"></p>
+                    </div>
                 </div>
-                <!--<div class="carousel-caption">
-                    <h1 >TOP EVENTS</h1>
-                    <h6 th:text="${slide.titulo}" class="h1-carousel edit1 mb-5 caption-top"></h6>
-                    <h3 th:text="${slide.fecha_hora}" class="h1-carousel mb-5 caption-bottom"></h3>
-                </div>-->
-                <!--<div class="carousel-item">
-                    <img src="img/slider2.jpg" width="100%" class="d-block" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/slider3.jpg" width="100%" class="d-block" alt="...">
-                </div>-->
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -79,74 +73,6 @@
             </div>
         </div>
     </div>
-
-    <!--<div class="container">
-        <div class="abs-center">
-            <div class="row">
-                <div class="col">
-                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static post">
-
-                            <h3 class="mb-0">Master de JAVA</h3>
-                            <p class="mb-1 text-muted">Nov 12</p>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <p href="#" class="stretched-link">Continue reading</p>
-                        </div>
-                        <div class="caja">
-                            <img class="bd-placeholder-img imgcard" src="https://escuela.it/storage/course_images/imagen-curso-html-css-50.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="abs-center">
-            <div class="row">
-                <div class="col">
-                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static post">
-                            <strong class="d-inline-block mb-2 text-primary">World</strong>
-                            <h3 class="mb-0">webinar 3</h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link">Continue reading</a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img"  src="img/master-css.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
-<!--<div class="container">
-    <section class="allevents" th:each="ev:${eventos}">
-        <div class="line"></div>
-        <article class="eventContainer">
-            <div class="eventInfo">
-                <div class="dateAndUsers">
-                    <p th:text="${ev.fecha_hora}"></p>
-                    <p th:text="${ev.user_max}"></p>
-                </div>
-                <div class="titleAndDesc">
-                    <h3 class="eventTitle" th:text="${ev.titulo}"></h3>
-                    <p class="eventDescription" th:text="${ev.descripcion}"></p>
-                </div>
-            </div>
-                <figure>
-                    <img class="imgEvents" th:src="@{${ev.img}}">
-                </figure>
-
-        </article>
-        <div class="line"></div>-->
-
-    </section>
-
-</div>
 
 </main>
 

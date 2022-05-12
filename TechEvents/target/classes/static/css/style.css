@@ -9,6 +9,14 @@ body{
     height: 100px !important;
 }
 
+
+.tarjeta{
+    background-color: transparent;
+}
+
+.nav-link{text-align: right !important;}
+
+
 .bg-dark, .container-h, .container-h2 {
     background-color: #005555 !important;
 }
