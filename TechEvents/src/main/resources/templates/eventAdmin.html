@@ -25,16 +25,20 @@
       <div class="row">
         <div class="col">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <a class="btn btn-secondary  mx-auto style= text-black-50" th:href="@{/views/eventos/create}"
-               th:text="'Nuevo Evento'" title="Crear Nuevo Evento">
+            <a class="btn btn-secondary  mx-auto style= text-black-50" th:href="@{/views/eventos/create}">
+               <img th:src="@{/img/plus.png}" title="Crear Nuevo Evento" width="100" height="97" >
+              <h3>Crear Nuevo Evento</h3>
             </a></div>
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" th:each="ev:${eventos}">
             <div class="col p-4 d-flex flex-column position-static post">
 
-              <h3 class="mb-2" th:text="${ev.titulo}"></h3>
+              <h3 class="mb-2" th:text="${ev.titulo}" ></h3>
               <p class="mb-2" th:text="${ev.fecha_hora}"></p>
               <p class="card-text mb-auto" th:text="${ev.descripcion}"></p>
               <p  class="stretched-link" th:text="${ev.user_max}"></p>
+              <p class="btn btn-danger btn-sm" th:text="'Eliminar'" title="Eliminar Evento"
+                 onclick="return confirm('Esta seguro de eliminar el evento?');"> ></p>
+              <p class="btn btn-success btn-sm" th:text="'Editar'" title="Editar Evento">></p>
             </div>
             <div class="caja">
               <img class="bd-placeholder-img imgcard position-absolute"   th:src="@{${ev.img}}" role="img">
