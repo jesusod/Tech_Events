@@ -54,7 +54,7 @@ Verifies the proper functioning of the web with the technologies applied to it.
 
 For all available versions, see the [tags in this repository](https://github.com/checkmyprojects/wheel-of-doom.git).
 
-## Autors ✒️
+## Coders ✒️
 
 [Lupe Flores](https://github.com/Lupe13)
 
