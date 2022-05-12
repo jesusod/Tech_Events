@@ -36,7 +36,7 @@ Verifies the proper functioning of the web with the technologies applied to it.
 # ![Image text](TechEvents/src/main/resources/static/img/screenshots/adminPage.jpeg)
 
 
-## Made with 🛠️
+## Tools 🛠️
 
 
 * [Trello](https://trello.com/b/LAXZpvTz/123-coders) - Project Organization.
@@ -56,10 +56,14 @@ For all available versions, see the [tags in this repository](https://github.com
 
 ## Autors ✒️
 
-[Guadalupe Flores](https://github.com/Lupe13)
+[Lupe Flores](https://github.com/Lupe13)
+
 [Carlos Laurie](https://github.com/CarlitosHunter)
+
 [Paula de Juan](https://github.com/PAULAdjs1)
+
 [Jesús Otero](https://github.com/jesusod)
+
 [Fran Domínguez](https://github.com/devFdom)
 
 ## License 📄

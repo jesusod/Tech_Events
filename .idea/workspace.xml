@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb63de90-e1de-478c-9c06-2cc6038067c6" name="Changes" comment="userPage">
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/screenshots/adminPage.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/screenshots/homePage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/screenshots/trello.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/eventAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/EventoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/EventoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/EventoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/EventoController.class" afterDir="false" />
-    </list>
+    <list default="true" id="bb63de90-e1de-478c-9c06-2cc6038067c6" name="Changes" comment="userPage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +120,7 @@
       <workItem from="1651822180785" duration="6534000" />
       <workItem from="1652080767836" duration="281000" />
       <workItem from="1652331656447" duration="11175000" />
-      <workItem from="1652373386046" duration="3377000" />
+      <workItem from="1652373386046" duration="3855000" />
     </task>
     <servers />
   </component>
