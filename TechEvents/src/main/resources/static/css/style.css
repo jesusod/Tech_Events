@@ -27,10 +27,16 @@ body{
 .btn-warning {
     background-color: #F7FF93 !important;}
 
+.btn-secondary {
+    background-color: #F7FF93 !important;
+    padding: 40px;
+
+}
+
 .logo-f {
     margin-top: 10px;
     margin-bottom: 10px;
-width: 15%;}
+    width: 15%;}
 
 .divcard{
     background-color: #069A8E;
@@ -168,3 +174,13 @@ ul.social-network li {
     background-color: #069A8E;
     color: white;
 }
+
+.caja{
+    width: 300px;
+    height: 211px;
+}
+.imgcard{
+    max-width: 100%;
+    max-height: 100%;
+}
+

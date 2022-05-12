@@ -4,10 +4,7 @@ import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name="eventos")
@@ -28,14 +25,8 @@ public class Evento implements Serializable {
     private String img;
 
 
- /*   @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-
-    @JoinTable(name = "eventos_usuarios",
-            joinColumns ={@JoinColumn(name="eventos_id")},
-            inverseJoinColumns = {@JoinColumn(name="usuarios_id")})
-    private List<Usuario> usuarios = new ArrayList<Usuario>();*/
-
-
+@ManyToMany(mappedBy = "eventos")
+    private Collection < Usuario > usuarios;
 
 
 
@@ -85,6 +76,18 @@ public class Evento implements Serializable {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    /*public Evento(String titulo) {
+        this.titulo = titulo;
+    }*/
+
+    public Collection<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public void setUsuarios(Collection<Usuario> usuarios) {
+        this.usuarios = usuarios;
     }
 
     @Override

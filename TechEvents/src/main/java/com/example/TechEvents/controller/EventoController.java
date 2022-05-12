@@ -1,9 +1,7 @@
 package com.example.TechEvents.controller;
 
 import com.example.TechEvents.models.entity.Evento;
-import com.example.TechEvents.models.entity.Usuario;
 import com.example.TechEvents.models.service.IEventoService;
-import com.example.TechEvents.models.service.IUsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,7 +21,7 @@ public class EventoController {
         List<Evento> listadoEventos = eventoService.listarTodos();
         model.addAttribute("titulo", "Lista de Eventos");
         model.addAttribute("eventos", listadoEventos);
-        return "views/eventos/listar";
+        return "/views/eventos/listar";
     }
 
     @GetMapping("/create")

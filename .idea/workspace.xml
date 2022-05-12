@@ -4,26 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb63de90-e1de-478c-9c06-2cc6038067c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Proyecto-05-Tech-Events.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/logotipo-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/master-css.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bb63de90-e1de-478c-9c06-2cc6038067c6" name="Changes" comment="userPage">
+      <change afterPath="$PROJECT_DIR$/TechEvents/demo 2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/PUsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/RegistroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/RegistroUsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/dto/UsuarioRegistroDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/registro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/EventoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/EventoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/entity/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/entity/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/service/IUsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/service/IUsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/service/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/java/com/example/TechEvents/models/service/UsuarioServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/logotipo-header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/logotipo-header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/master-css.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/master-css.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/static/img/slider3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/plantilla/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/src/main/resources/templates/plantilla/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/Valid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/entity/Email.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/entity/NotEmpty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/EventoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/EventoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/entity/Evento.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/entity/Evento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/entity/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/entity/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/service/IUsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/service/IUsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/service/UsuarioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/com/example/TechEvents/models/service/UsuarioServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/static/img/logotipo-header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/static/img/logotipo-header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/static/img/master-css.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/static/img/master-css.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/static/img/slider1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/static/img/slider1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/static/img/slider2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/static/img/slider2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/static/img/slider3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/static/img/slider3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechEvents/target/classes/templates/plantilla/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/TechEvents/target/classes/templates/plantilla/template.html" afterDir="false" />
     </list>
@@ -163,5 +187,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="userPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="userPage" />
   </component>
 </project>
