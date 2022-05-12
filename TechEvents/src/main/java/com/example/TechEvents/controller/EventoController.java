@@ -26,7 +26,7 @@ public class EventoController {
         model.addAttribute("titulo", "Lista de Eventos");
         model.addAttribute("eventos", listadoEventos);
 
-        return "views/eventos/listar";
+        return "eventAdmin";
     }
 
     @GetMapping("/create")

@@ -1,1 +1,0 @@
-# Proyecto-05-Tech-Events
