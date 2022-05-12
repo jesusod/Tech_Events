@@ -30,7 +30,11 @@ See **Installation** to learn how to deploy the project.
 
 Verifies the proper functioning of the web with the technologies applied to it.
 
-*Screenshoots
+# ![Image text](TechEvents/src/main/resources/static/img/screenshots/trello.png)
+# ![Image text](TechEvents/src/main/resources/static/img/screenshots/figma.png)
+# ![Image text](TechEvents/src/main/resources/static/img/screenshots/homePage.png)
+# ![Image text](TechEvents/src/main/resources/static/img/screenshots/adminPage.jpeg)
+
 
 ## Made with 🛠️
 
