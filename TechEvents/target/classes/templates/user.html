@@ -12,10 +12,14 @@
         <div class="abs-center">
             <div class="row">
                 <div class="col">
-                    <div class="row g-0 overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
                         <a class="btn btn-secondary  m-5 mx-auto style= text-black-50" th:href="@{/views/eventos/}"
                            th:text="'Mis Eventos'" title="Mis Eventos">
-                        </a></div>
+                        </a>
+                        <a class="btn btn-secondary  m-5 mx-auto style= text-black-50" th:href="@{/logout}"
+                           th:text="'Logout'" title="Logout">
+                        </a>
+                    </div>
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" th:each="ev:${eventos}">
                         <div class="col p-4 d-flex flex-column position-static post">
 
