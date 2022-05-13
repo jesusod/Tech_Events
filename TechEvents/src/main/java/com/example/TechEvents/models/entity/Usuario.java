@@ -2,10 +2,7 @@ package com.example.TechEvents.models.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 
 @Entity
@@ -23,13 +20,22 @@ public class Usuario implements Serializable {
     private String password;
 
 
-/*    @ManyToMany(mappedBy = "usuarios")
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "usuarios_eventos",
+            joinColumns = @JoinColumn(
+                    name = "usuarios_id"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "eventos_id"))
+    private Collection< Evento > eventos;
 
-    *//*@JoinTable(name = "usuarios_eventos",
-            joinColumns ={@JoinColumn(name="usuarios_id")},
-            inverseJoinColumns = {@JoinColumn(name="eventos_id")})*//*
-    private List<Evento> eventos = new ArrayList<Evento>() ;*/
 
+    public Usuario(Long id, String nombre, String email, String password) {
+        this.id = id;
+        this.nombre = nombre;
+        this.email = email;
+        this.password = password;
+    }
 
     public Usuario() {
     }

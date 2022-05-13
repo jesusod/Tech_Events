@@ -5,19 +5,9 @@
 <body>
 <header th:replace="plantilla/template :: header"></header>
 
-<!--<div class="container-h2">
-  <div class="row-h-btn">
-    <div class="col-sm-btn">
-      <a th:href="@{/login}"><button type="button" class="btn btn-warning">LOG-IN</button></a>
-    </div>
-    <div class="col-sm-btn">
-      <a th:href="@{/registro}"><button type="button" class="btn btn-warning">SING-UP</button></a>
-    </div>
-  </div>
-</div>-->
+
 
 <main th:fragment="main">
-
 
 
   <div class="container" >
@@ -35,13 +25,18 @@
               <h3 class="mb-2" th:text="${ev.titulo}" ></h3>
               <p class="mb-2" th:text="${ev.fecha_hora}"></p>
               <p class="card-text mb-auto" th:text="${ev.descripcion}"></p>
-              <p  class="stretched-link" th:text="${ev.user_max}"></p>
-              <a class="btn btn-danger btn-sm" th:href="@{/views/eventos/delete/} + ${ev.id}" th:text="'Eliminar'" title="Eliminar Evento"
+              <p  class="" th:text="${ev.user_max}"></p>
+             <!-- <a class="btn btn-danger btn-sm" th:href="@{/views/eventos/delete/} + ${ev.id}" th:text="'Eliminar'" title="Eliminar Evento"
                  onclick="return confirm('Esta seguro de eliminar el evento?');"></a>
               <a class="btn btn-success btn-sm" th:href="@{/views/eventos/edit/} + ${ev.id}"th:text="'Editar'" title="Editar Evento"></a>
+          -->
             </div>
             <div class="caja">
               <img class="bd-placeholder-img imgcard"   th:src="@{${ev.img}}" role="img">
+              <a class="btn btn-danger btn-sm" th:href="@{/views/eventos/delete/} + ${ev.id}" th:text="'Eliminar'" title="Eliminar Evento"
+                 onclick="return confirm('Esta seguro de eliminar el evento?');"></a>
+              <a class="btn btn-success btn-sm" th:href="@{/views/eventos/edit/} + ${ev.id}"th:text="'Editar'" title="Editar Evento"></a>
+
             </div>
           </div>
         </div>
