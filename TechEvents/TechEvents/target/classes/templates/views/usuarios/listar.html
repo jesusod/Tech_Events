@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org" lang="en">
+<head th:replace="plantilla/template :: head">
+
+<body>
+<header th:replace="plantilla/template :: header">></header>
+
+<div class="container">
+    <h1 th:text="${titulo}"></h1>
+    <!--<p th:text="${usuarios}"></p>-->
+</div>
+
+<div class="container">
+
+    <a class="btn btn-primary btn-sm" th:href="@{/views/usuarios/create}"
+       th:text="'Nuevo Usuario'" title="Crear Nuevo Usuario">
+
+    </a>
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Password</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="us:${usuarios}">
+            <th scope="row" th:text="${us.id}"></th>
+            <td th:text="${us.nombre}"></td>
+            <td th:text="${us.email}"></td>
+            <td th:text="${us.password}"></td>
+            <td>
+                <a class="btn btn-success btn-sm" th:href="@{/views/usuarios/edit/} + ${us.id}"
+                   th:text="'Editar'" title="Editar Evento">
+                </a>
+            </td>
+
+            <td>
+                <a class="btn btn-danger btn-sm" th:href="@{/views/usuarios/delete/} + ${us.id}"
+                   th:text="'Eliminar'" title="Eliminar Evento"
+                   onclick="return confirm('¿Estas seguro de que quieres eliminar el usuario?')">
+                </a>
+
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    </div>
+
+<footer th:replace="plantilla/template :: footer">></footer>
+</body>
+</html>

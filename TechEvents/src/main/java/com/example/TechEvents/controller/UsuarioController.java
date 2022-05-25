@@ -2,6 +2,7 @@ package com.example.TechEvents.controller;
 
 import com.example.TechEvents.models.entity.Evento;
 import com.example.TechEvents.models.entity.Usuario;
+import com.example.TechEvents.models.service.IEventoService;
 import com.example.TechEvents.models.service.IUsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,11 +14,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("views/usuarios")
+@RequestMapping("/views/usuarios/")
 public class UsuarioController {
 
     @Autowired
     private IUsuarioService usuarioService;
+
 
     @GetMapping("/")
     public String listarUsuarios(Model model){
@@ -71,4 +73,7 @@ public class UsuarioController {
         return "redirect:/views/usuarios/";
     }
 
+
+
 }
+
